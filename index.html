@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Creuset Cookware Giveaway - Sharon & Kelly Osbourne</title>
+    <meta name="description" content="Win exclusive Le Creuset cookware in this special giveaway by Sharon & Kelly Osbourne. Limited time offer with up to 100% off!">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <img src="/lovable-uploads/e9c21c93-e0bd-409b-858d-811592a0754a.png" alt="Le Creuset" class="logo">
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Headline Section -->
+        <section class="headline-section">
+            <h1 class="main-title">
+                Rock & Roll Royalty Sharon & Kelly Osbourne Join Forces With Le Creuset – Don't Miss This Cookware Giveaway!
+                <br>
+                <span class="discount-text">Up To 100% Off!</span>
+            </h1>
+            
+            <p class="subtitle">The Osbournes bring you the hottest deal of 2025!</p>
+            
+            <img src="/main.png" alt="Sharon & Kelly Osbourne" class="hero-image">
+            
+            <div class="description-text">
+                <p>
+                    🎉 <strong>Sharon & Kelly Osbourne</strong> has officially partnered with <strong>Le Creuset</strong> for an exclusive Cookware set Giveaway to give back to fans after the tragic Passing of <strong>Ozzy Osbourne.</strong>
+                </p>
+                
+                <p>
+                    Today (August 29, 2025), you've been handpicked to take part in a quick survey. It only takes a minute and you could walk away with a premium prize: the <strong>Le Creuset Cookware Set</strong>!
+                </p>
+                
+                <div class="warning-box">
+                    <p>
+                        ⚠️ <strong>Note:</strong> These are authentic Le Creuset's product just with minor wear on the box. Supplies are extremely limited and available on a first-come, first-served basis.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Image -->
+        <div class="product-showcase">
+            <img src="/lovable-uploads/8a5793e3-162e-4f06-9f0c-db0bddcb678b.png" alt="Le Creuset Dutch Oven" class="product-image">
+        </div>
+
+        <!-- Survey Section -->
+        <section id="survey-section" class="survey-section">
+            <div class="survey-intro">
+                <p>Every Friday, 10 lucky participants across the U.S. are selected to win. And today could be your day! But don't wait, this offer is valid for a limited time only.</p>
+                <p>Your feedback helps us improve, and as a thank-you, you'll get a shot at the exclusive <strong>Osbourne Family Le Creuset Cookware set.</strong></p>
+                <p>You only have <strong><span id="timer">1 minutes and 27 seconds</span></strong> left to complete the survey and claim your entry!</p>
+                <p class="urgency-text">⏳ Act fast!! This Le Creuset's product is in high demand and spots are almost gone!</p>
+            </div>
+
+            <div class="question-container">
+                <h3 id="question-title" class="question-title">
+                    <strong>Question 1 of 4:</strong> Do you have a valid US address to ship to?
+                </h3>
+                
+                <div id="question-options" class="question-options">
+                    <button class="option-button" onclick="handleAnswer(0, 'Yes')">Yes</button>
+                    <button class="option-button" onclick="handleAnswer(0, 'No')">No</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Checking Section -->
+        <section id="checking-section" class="checking-section" style="display: none;">
+            <h2>We are checking your answers...</h2>
+            <div class="loading-icon">⏳</div>
+            <div class="checking-results">
+                <p>✓ You answered 4 out of 4 questions</p>
+                <p>✓ There are no previous polls from your IP address.</p>
+                <p>✓ There are still prizes available!</p>
+            </div>
+        </section>
+
+        <!-- Box Selection Section -->
+        <section id="boxes-section" class="boxes-section" style="display: none;">
+            <h2>Congratulations, we have successfully validated your answers.</h2>
+            <p class="date-text"><strong>Friday August 29, 2025</strong></p>
+            <p>You have the chance to win one of our prizes.</p>
+            <p class="try-luck-text">Try your luck!</p>
+            <p>Simply choose the right gift box.</p>
+            <p class="attempts-text">You have <span id="attempts-count">3</span> attempts, good luck!</p>
+            
+            <div class="gift-boxes">
+                <button class="gift-box" onclick="handleBoxClick(1)">🎁</button>
+                <button class="gift-box" onclick="handleBoxClick(2)">🎁</button>
+                <button class="gift-box" onclick="handleBoxClick(3)">🎁</button>
+            </div>
+
+            <div id="empty-box-message" class="empty-box-message" style="display: none;">
+                <h3>OHHH…</h3>
+                <p>Sorry, this gift box is empty! But you can try again <span id="remaining-attempts">2 more times</span>. Good luck!</p>
+                <button onclick="closeEmptyMessage()">OK</button>
+            </div>
+        </section>
+
+        <!-- Win Section -->
+        <section id="win-section" class="win-section" style="display: none;">
+            <h2 class="win-title">You did it!</h2>
+            <p class="win-subtitle">Congratulations! You won the Le Creuset Cookware set!</p>
+            
+            <img src="/lovable-uploads/e0ea1277-9c3e-4bd1-a845-46e36f5e11ca.png" alt="Le Creuset Cookware Set" class="win-product-image">
+            
+            <div class="rules-container">
+                <h3 class="rules-title">***THE RULES***</h3>
+                <ol class="rules-list">
+                    <li>1. You will be directed to the website of our certified distributors.</li>
+                    <li>2. Enter your address & pay a small shipping fee to get your Le Creuset Cookware set.</li>
+                    <li>3. The Le Creuset Cookware set will be delivered within 5-7 days</li>
+                </ol>
+            </div>
+            
+            <button class="apply-button">Apply now</button>
+        </section>
+
+        <!-- Comments Section -->
+        <section class="comments-section">
+            <h3 class="comments-title">What People Are Saying</h3>
+            
+            <div class="comments-container">
+                <div class="comment">
+                    <div class="comment-header">
+                        <div class="avatar">SH</div>
+                        <span class="commenter-name">Sallie Hull</span>
+                    </div>
+                    <p class="comment-text">Shit I didn't win anything!</p>
+                    <div class="comment-footer">
+                        I like it · Comment ❤️ 29 · 4 minutes ago
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-header">
+                        <div class="avatar">NJ</div>
+                        <span class="commenter-name">Natalie Jennings</span>
+                    </div>
+                    <p class="comment-text">I like these promotions!</p>
+                    <div class="comment-footer">
+                        I like it · Comment ❤️ 9 · 11 minutes ago
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-header">
+                        <div class="avatar">CD</div>
+                        <span class="commenter-name">Casey Daniels</span>
+                    </div>
+                    <p class="comment-text">Love how light it feels but still delivers powerful performance in the kitchen! 🙄</p>
+                    <div class="comment-footer">
+                        I like it · Comment ❤️ 22 · 15 minutes ago
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-header">
+                        <div class="avatar">EC</div>
+                        <span class="commenter-name">Emma Caldwell</span>
+                    </div>
+                    <p class="comment-text">I thought it was a joke, but my Le Creuset Cookware set arrived this morning!</p>
+                    <div class="comment-footer">
+                        I like it · Comment ❤️ 36 · 38 minutes ago
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-header">
+                        <div class="avatar">FC</div>
+                        <span class="commenter-name">Florence Cleek</span>
+                    </div>
+                    <p class="comment-text">Delivers flawless results every time, pure kitchen magic!</p>
+                    <div class="comment-footer">
+                        I like it · Comment ❤️ 31 · 42 minutes ago
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-header">
+                        <div class="avatar">AF</div>
+                        <span class="commenter-name">Amalia Falchi</span>
+                    </div>
+                    <p class="comment-text">Shhhh don't tell them that I'm using two different cards to get a Le Creuset's products for me and another to sell on FB marketplace lol. I think I've cracked the system</p>
+                    <div class="comment-footer">
+                        I like it · Comment ❤️ 6 · 1 hour ago
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-header">
+                        <div class="avatar">MM</div>
+                        <span class="commenter-name">Margaret McNutt</span>
+                    </div>
+                    <p class="comment-text">It's my secret weapon for making every meal feel special!</p>
+                    <div class="comment-footer">
+                        I like it · Comment ❤️ 15 · 2 hours ago
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-header">
+                        <div class="avatar">HM</div>
+                        <span class="commenter-name">Hannah Mason</span>
+                    </div>
+                    <p class="comment-text">Are there any other surveys to take?</p>
+                    <div class="comment-footer">
+                        I like it · Comment ❤️ 39 · 2 hours ago
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-header">
+                        <div class="avatar">ZC</div>
+                        <span class="commenter-name">Zoey Chandler</span>
+                    </div>
+                    <p class="comment-text">Fantastic! I have never won anything before!</p>
+                    <div class="comment-footer">
+                        I like it · Comment ❤️ 23 · 3 hours ago
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-header">
+                        <div class="avatar">TW</div>
+                        <span class="commenter-name">Tina Williams</span>
+                    </div>
+                    <p class="comment-text">I noticed a difference in my cooking from the very first use!</p>
+                    <div class="comment-footer">
+                        I like it · Comment ❤️ 30 · 4 hours ago
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
